@@ -541,18 +541,18 @@
 
       shareFacebookButton.addEventListener('click', () => {
         const text = encodeURIComponent(getShareText());
-        const url = encodeURIComponent('https://ar-names.github.io/'); // Example URL
+        const url = encodeURIComponent('https://arabicnamesmeaning.is-a.software/'); // Example URL
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank');
       });
 
       shareTelegramButton.addEventListener('click', () => {
         const text = encodeURIComponent(getShareText());
-        const url = encodeURIComponent('https://ar-names.github.io/'); // Example URL
+        const url = encodeURIComponent('https://arabicnamesmeaning.is-a.software/'); // Example URL
         window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
       });
 
       copyLinkButton.addEventListener('click', () => {
-        const textToCopy = `${getShareText(false)}\nاكتشف المزيد على: https://ar-names.github.io/`;
+        const textToCopy = `${getShareText(false)}\nاكتشف المزيد على: https://arabicnamesmeaning.is-a.software/`;
         navigator.clipboard.writeText(textToCopy).then(() => {
           copyLinkButton.querySelector('#copy-link-default').classList.add('hidden');
           copyLinkButton.querySelector('#copy-link-success').classList.remove('hidden');
